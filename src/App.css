@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'IranSans';
+  src: local('IranSans'),
+    url(./Assets/Fonts/5c53f1a72f61b5b51e2ea79a22ebc38b.ttf) format('truetype');
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: 'IranSans';
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
+  background: #dedede;
+  border-radius: 0 0 20px 20px;
+  position: fixed;
+  top: 0px;
+  padding: 15px 15px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #7c7c7c;
 }
-
-.App-link {
-  color: #61dafb;
+.Footer {
+  background: #dedede;
+  border-radius: 20px 20px 0 0;
+  position: fixed;
+  bottom: 0px;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  color: #7c7c7c;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Body {
+  position: initial;
+  margin: 100px 10px;
+}
+.ProBody {
+  position: initial;
+  margin: 80px 10px;
+  margin-bottom: 100px !important;
+}
+.Parts {
+  background: #dedede;
+  color: #7c7c7c;
+  border-radius: 25px;
+  margin: 15px 5px;
+  align-items: center;
+  padding: 15px 20px;
+}
+.textArea {
+  background: rgb(222, 222, 222);
+  border: none;
+  border-radius: 25px;
+  width: 98%;
+  height: 110px;
+  margin: 3px;
+  text-align: right;
+  padding: 15px 20px;
+  color: #7c7c7c;
+  font-size: 15px;
+  font-weight: bolder;
+  resize: none;
+}
+.btnConfirm {
+  font-size: 18px;
+  color: black;
+  font-weight: bolder;
+  border-radius: 15px;
+  border: none;
+  background: #dedede;
+  width: fit-content;
+  padding: 10px 60px;
+}
+.SmallPart {
+  background: white;
+  color: #7c7c7c;
+  border-radius: 25px;
+  margin: 15px 5px;
+  align-items: center;
+  padding: 5px 15px;
+  border: 1px solid black;
 }
